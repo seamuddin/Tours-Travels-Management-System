@@ -1,0 +1,1 @@
+SELECT  SUM(tktbookid), `busid`, `userid`, `seatnumber`, `tblseatid`, `status`, `bkdate`, `bookid` FROM `tblusrtktbook`GROUP BY bookid

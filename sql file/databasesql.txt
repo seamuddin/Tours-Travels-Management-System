@@ -1,0 +1,15 @@
+SELECT tblbus.`busname`, tblbus.`busnumber`, tblbus.`busroute`, tblbus.`bustime`, tblbus.`busstart`, tblbus.`busend`, tblbus.`busseatsavailable`, tblbus.`busdate`, tblbus.`bustktprice`, (tblbus.busseatsavailable-COUNT(tblusrtktbook.seatnumber)) As seatavailable FROM (tblbus INNER JOIN tblusrtktbook ON tblbus.busid = tblusrtktbook.busid)
+
+
+
+
+
+
+
+
+
+<?php/*  if($_SESSION['login'])
+					       {?>
+					       	<a href="" class="btn btn-success">Book Ticket</a>
+					       	<?php } else {?><a href="#" data-toggle="modal" data-target="#myModal4" href="" class="btn btn-success">Book Tickets</a>
+					       	<?php } */ ?>

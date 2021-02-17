@@ -1,0 +1,1 @@
+SELECT tblusers.FullName, tblusers.EmailId, tbltourpackages.PackageName, tbltourpackages.PackagePrice, tblbooking.FromDate, tblbooking.RegDate, tblbooking.totalperson, tblbooking.status FROM ((tblusers INNER JOIN tblbooking ON tblusers.id = tblbooking.UserEmail) INNER JOIN tbltourpackages ON tblbooking.PackageId = tbltourpackages.PackageId )
